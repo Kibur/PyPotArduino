@@ -37,7 +37,7 @@ class ArduinoSerial:
         line = None
 
         try: line = self._serial.readline()
-        except SerialException, se: sys.exit(0)
+        except SerialException, se: raise se
         finally: return line
 
     def close(self):
