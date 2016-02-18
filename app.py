@@ -50,8 +50,6 @@ class BackgroundWorker(threading.Thread):
                 end = line.index('<')
                 val = line[begin:end]
                 print val
-                # Somehow the value must be uploaded
-                # or passed to a web server
         else: self.stop()
 
 class UI:
